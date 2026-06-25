@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { RiMapPinLine, RiMenuLine } from 'react-icons/ri'
 
-const shopImg = '/shop.jpg'
+const shopImg = '/shop.webp'
 
 export default function Hero() {
   return (
