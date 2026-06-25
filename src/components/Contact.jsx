@@ -12,7 +12,7 @@ const buttons = [
     href: 'tel:+917975940704',
     icon: RiPhoneLine,
     label: 'Call Us',
-    className: 'bg-orange-500 hover:bg-orange-600 text-white',
+    className: 'bg-green-700 hover:bg-green-800 text-white',
   },
   {
     href: 'https://www.google.com/maps/place/E+Stop/@12.9582564,77.4818545,17z',
@@ -28,7 +28,7 @@ const buttons = [
   },
 ]
 
-const pills = ['🕐 Open Daily', '🍱 Fresh Food Always', '💰 Affordable Prices', '📍 Jnana Ganga Nagar']
+const pills = ['🕐 Open Daily 6:30 AM – 10 PM', '🍱 Fresh Food Always', '💰 Affordable Prices', '📍 Jnana Ganga Nagar']
 
 export default function Contact() {
   return (
@@ -40,7 +40,7 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-3">Reach Us</p>
+          <p className="text-xs font-bold text-green-400 uppercase tracking-widest mb-3">Reach Us</p>
           <h2 className="text-4xl font-extrabold tracking-tight mb-4">Come Say Hello 👋</h2>
           <p className="text-gray-400 text-base mb-10 max-w-md mx-auto leading-relaxed">
             Walk in, call us or drop a WhatsApp — we're always happy to serve you.

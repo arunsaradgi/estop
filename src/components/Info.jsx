@@ -16,10 +16,6 @@ function useIsOpen() {
   return isOpen
 }
 
-const hours = [
-  { day: 'Mon – Sun', time: '6:30 AM – 10:00 PM' },
-]
-
 export default function Info() {
   const isOpen = useIsOpen()
 
@@ -33,12 +29,10 @@ export default function Info() {
             <span className={`w-2 h-2 rounded-full ${isOpen ? 'bg-green-500 animate-pulse' : 'bg-red-400'}`} />
             {isOpen ? 'Open Now' : 'Closed Now'}
           </span>
-          {hours.map(h => (
-            <div key={h.day} className="flex justify-between text-sm py-2 border-b border-gray-100 last:border-0">
-              <span className="font-semibold text-gray-800">{h.day}</span>
-              <span className="text-gray-500">{h.time}</span>
-            </div>
-          ))}
+          <div className="flex justify-between text-sm py-2 border-b border-gray-100">
+            <span className="font-semibold text-gray-800">Mon – Sun</span>
+            <span className="text-gray-500">6:30 AM – 10:00 PM</span>
+          </div>
           <p className="text-xs text-gray-400 mt-3">* Hours may differ on public holidays</p>
         </div>
       ),
@@ -55,10 +49,10 @@ export default function Info() {
             Bengaluru, Karnataka 560110
           </p>
           <a
-            href="https://www.google.com/maps/place/E+Stop/@12.9582646,77.4406528,13z/data=!4m6!3m5!1s0x3bae3f0025971be1:0x3925ece2f61b2b68!8m2!3d12.9582564!4d77.4818545!16s%2Fg%2F11z7p8dq7p?entry=ttu&g_ep=EgoyMDI2MDYyMi4wIKXMDSoASAFQAw%3D%3D"
+            href="https://www.google.com/maps/place/E+Stop/@12.9582564,77.4818545,17z"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-orange-500 hover:text-orange-600 transition-colors mt-2"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-green-700 hover:text-green-800 transition-colors mt-2"
           >
             <RiMapPinLine /> Open in Google Maps →
           </a>
@@ -70,7 +64,7 @@ export default function Info() {
       title: 'Get in Touch',
       content: (
         <div className="space-y-3">
-          <a href="tel:+917975940704" className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">
+          <a href="tel:+917975940704" className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-green-700 transition-colors">
             📞 +91 79759 40704
           </a>
           <a
@@ -95,15 +89,15 @@ export default function Info() {
   return (
     <section id="info" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">Visit Us</p>
+        <p className="text-xs font-bold text-green-700 uppercase tracking-widest mb-2">Visit Us</p>
         <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-3">Hours & Info</h2>
         <p className="text-gray-400 text-base mb-10">We're open every day — never far from a great meal.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {cards.map(card => (
             <div key={card.title} className="bg-gray-50 rounded-2xl border border-gray-100 p-6">
-              <div className="w-11 h-11 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
-                <card.icon className="text-orange-500 text-xl" />
+              <div className="w-11 h-11 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                <card.icon className="text-green-700 text-xl" />
               </div>
               <h3 className="text-base font-bold text-gray-900 mb-4">{card.title}</h3>
               {card.content}

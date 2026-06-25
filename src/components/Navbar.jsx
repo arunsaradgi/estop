@@ -23,11 +23,11 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 bg-orange-500 rounded-xl flex items-center justify-center shadow-md shadow-orange-200 group-hover:scale-105 transition-transform">
+          <div className="w-9 h-9 bg-green-700 rounded-xl flex items-center justify-center shadow-md shadow-green-200 group-hover:scale-105 transition-transform">
             <RiStoreLine className="text-white text-lg" />
           </div>
           <span className="font-extrabold text-xl text-gray-900 tracking-tight">
-            E<span className="text-orange-500">Stop</span>
+            E<span className="text-green-700">Stop</span>
           </span>
         </a>
 
@@ -47,7 +47,7 @@ export default function Navbar() {
           href="https://wa.me/917975940704?text=Hi%20E%20Stop%2C%20I%20want%20to%20place%20an%20order!"
           target="_blank"
           rel="noreferrer"
-          className="hidden md:inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-colors shadow-sm shadow-orange-200"
+          className="hidden md:inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-colors shadow-sm shadow-green-200"
         >
           Order Now
         </a>
@@ -69,7 +69,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block py-2.5 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors"
+              className="block py-2.5 text-sm font-medium text-gray-700 hover:text-green-700 transition-colors"
             >
               {l.label}
             </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
             href="https://wa.me/917975940704?text=Hi%20E%20Stop%2C%20I%20want%20to%20place%20an%20order!"
             target="_blank"
             rel="noreferrer"
-            className="block mt-3 text-center bg-orange-500 text-white text-sm font-semibold py-2.5 rounded-xl"
+            className="block mt-3 text-center bg-green-700 text-white text-sm font-semibold py-2.5 rounded-xl"
           >
             Order Now
           </a>
